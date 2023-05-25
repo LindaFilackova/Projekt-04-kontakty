@@ -22,25 +22,28 @@ h1 {
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 2%;
-	display: flex;
-	flex-wrap: wrap;
-	flex: 1 1 100%;
+	flex: 1 1 calc((100% / 2) - 5%);
 	padding: 20px;
-	margin: 20px;
+	margin: 8px;
 	box-shadow: 2px 2px 2px darkgrey;
-	text-align: center;
-	align-content: center;
-	
-}
+	align-items: stretch;
 
+}
 
 .img {
 	border-radius: 50%;
+	float: left;
+	align-content: center;
+	padding: 40px;
+		
 			
 }
  
 .popis{
 	padding: 20px;
+	display:flex;
+	flex-flow: wrap;
+	
 }
 
 @media (min-width: 480px){
@@ -51,13 +54,17 @@ h1 {
 
 @media (min-width: 860px){
     .osoba {
-        flex: 1 1 calc(100%/2 - 3%); 
+        flex: 1 1 calc((100%/2) - 5%); 
     }
 
 }
 
 @media (min-width: 1020px) {     
 	.osoba {
-        flex: 1 1 calc(100%/4 - 3%); 
+        flex: 1 1 calc((100%/4) - 5%); 
     }
+
+	.img{
+		float:none;
+	}
 }
