@@ -11,7 +11,11 @@ h1 {
 	text-align: center;
 }
 
-.tym{
+h2 {
+	text-align: center;
+}
+
+.tym {
 	display:flex;
 	flex-wrap: wrap;
 	
@@ -22,53 +26,66 @@ h1 {
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 2%;
-	flex: 1 1 calc((100% / 2) - 5%);
+	flex: 1 1 calc(100% - 3%);
+	text-align: center;
 	padding: 20px;
-	margin: 2px;
+	margin: 5px;
 	box-shadow: 2px 2px 2px darkgrey;
-	align-items: stretch;
+	justify-content: center;
 
 }
 
 .img {
 	border-radius: 50%;
-	float: left;
-	align-content: center;
-	padding: 40px;
-			
+	width: 40%;
+				
 }
  
 .popis{
 	padding: 20px;
 	display:flex;
 	flex-flow: wrap;
+	justify-content: center;
 	
 }
-@media (max-width:479px) {
+
+
+@media (min-width: 480px) {
+    .osoba {
+        flex: 1 1 calc((100% / 2) - 5%); 
+		
+		
+    }
 	.img {
-		float: none;
+		float: left;
+		
+		
 	}
-}
 
-@media (min-width: 480px){
-    .osoba {
-        flex: 1 1 calc(100% - 3%); 
-    }
-}
+	.popis {
+		text-align: left;
+	}
 
-@media (min-width: 860px){
-    .osoba {
-        flex: 1 1 calc((100%/2) - 5%); 
-    }
+	h2 {
+		text-align: left;
+	}
 
 }
 
-@media (min-width: 1030px) {     
+@media (min-width: 860px) {     
 	.osoba {
-        flex: 1 1 calc((100%/4) - 20%); 
+        flex: 1 1 calc((100% / 4) - 5%); 
+		
+		
     }
 
-	.img{
-		float:none;
+	.img {
+		width: 50%;
+		float: none; 
 	}
+
+	h2 {
+		text-align: center;
+	}
+
 }
